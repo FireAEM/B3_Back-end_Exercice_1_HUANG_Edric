@@ -9,6 +9,8 @@ class Task:
     def __str__(self):
         return f"{self.id}: {self.title}"
 
+    def to_dict(self):
+        return {"id": self.id, "title": self.title}
 
 class TaskManager:
     def __init__(self):
